@@ -21,22 +21,22 @@ public class Hari {
 		self.bundleID = bundleID
 	}
 
-	public func string(forKey: HariKey, completion: ((HariStatus<String>) -> ())) {
+	public func string(forKey: HariKey) throws -> String {
 		let repository = StringRepository(suiteName: suiteName, bundleID: bundleID, key: forKey.stringValue)
-		if let value = repository.get() {
-			completion(.success(value))
-		} else {
-			completion(.failure(.notFoundKey))
+		guard let value = repository.get() else {
+			throw HariError.notFoundKey
 		}
+
+		return value
 	}
 
-	public func bool(forKey: HariKey, completion: ((HariStatus<Bool>) -> ())) {
+	public func bool(forKey: HariKey) throws -> Bool {
 		let repository = BoolRepository(suiteName: suiteName, bundleID: bundleID, key: forKey.stringValue)
-		if let value = repository.get() {
-			completion(.success(value))
-		} else {
-			completion(.failure(.notFoundKey))
+		guard let value = repository.get() else {
+			throw HariError.notFoundKey
 		}
+
+		return value
 	}
 
 }

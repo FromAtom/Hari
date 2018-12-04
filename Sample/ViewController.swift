@@ -15,14 +15,12 @@ class ViewController: UIViewController {
 		super.viewDidLoad()
 
 		Hari.shared.setup(suiteName: "com.example.app.group", bundleID: "com.example.app")
-		Hari.shared.bool(forKey: HariKeys.useDebugMode, completion: { status in
-			switch status {
-			case .success(let value):
-				print(value)
-			case .failure(let error):
-				print(error)
-			}
-		})
+		do {
+			let value = try Hari.shared.bool(forKey: HariKeys.useDebugMode)
+			print(value)
+		} catch let error {
+			print(error)
+		}
 	}
 
 }
