@@ -3,7 +3,7 @@
 //  Hari
 //
 //  Created by FromAtom on 2018/11/12.
-//  Copyright © 2018 pixiv Inc. All rights reserved.
+//  Copyright © FromAtom All rights reserved.
 //
 
 import Foundation
