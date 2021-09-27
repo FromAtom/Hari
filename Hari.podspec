@@ -13,5 +13,5 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/FromAtom/Hari.git", :tag => "#{spec.version}" }
   spec.source_files = 'Hari/**/*.{swift}'
   spec.requires_arc = true
-  spec.swift_version = '5.0'
+  spec.swift_version = '5.2'
 end
