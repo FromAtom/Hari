@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "Hari"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.5"
   spec.summary      = "Support library for Chusha"
   spec.description  = <<-DESC
   This is a upport library for Chusha.
