@@ -6,7 +6,7 @@
 import Hari
 
 enum HariKeys: String, HariKey {
-	case someKeyName1
+    case someKeyName1
     case someKeyName2
 }
 
