@@ -1,5 +1,5 @@
 //
-//  HariStatus.swift
+//  HariError.swift
 //  Hari
 //
 //  Created by FromAtom on 2018/11/27.
@@ -8,7 +8,8 @@
 
 import Foundation
 
-public enum HariStatus<T> {
-	case success(T)
-	case failure(HariError)
+public enum HariError: Error {
+	case notFoundKey
+	case undefinedSuiteName
+	case undefinedBundleID
 }

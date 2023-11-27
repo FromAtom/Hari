@@ -1,11 +1,11 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.9
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
     name: "Hari",
-	platforms: [.iOS(.v10)],
+	platforms: [.iOS(.v13)],
     products: [
 		.library(
 			name: "Hari",
@@ -16,9 +16,7 @@ let package = Package(
     targets: [
         .target(
             name: "Hari",
-            dependencies: [],
-            path: "Hari"
+            dependencies: []
 		)
-    ],
-	swiftLanguageVersions: [.v5]
+    ]
 )
