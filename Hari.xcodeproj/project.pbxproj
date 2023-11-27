@@ -10,7 +10,6 @@
 		DC19C14521ACE0CD006F7780 /* HariError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC19C14421ACE0CD006F7780 /* HariError.swift */; };
 		DC19C14721ACF61F006F7780 /* HariStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC19C14621ACF61F006F7780 /* HariStatus.swift */; };
 		DC19C14921AD2CCA006F7780 /* HariKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC19C14821AD2CCA006F7780 /* HariKey.swift */; };
-		DC7B34C721AB99CF007E56C7 /* Hari.h in Headers */ = {isa = PBXBuildFile; fileRef = DC7B34C521AB99CF007E56C7 /* Hari.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC7B34EC21AB9A27007E56C7 /* Hari.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B34EB21AB9A27007E56C7 /* Hari.swift */; };
 		DC7B34F421AB9F25007E56C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B34F321AB9F25007E56C7 /* AppDelegate.swift */; };
 		DC7B34F621AB9F25007E56C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B34F521AB9F25007E56C7 /* ViewController.swift */; };
@@ -29,8 +28,6 @@
 		DC19C14621ACF61F006F7780 /* HariStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HariStatus.swift; sourceTree = "<group>"; };
 		DC19C14821AD2CCA006F7780 /* HariKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HariKey.swift; sourceTree = "<group>"; };
 		DC7B34C221AB99CF007E56C7 /* Hari.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hari.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC7B34C521AB99CF007E56C7 /* Hari.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hari.h; sourceTree = "<group>"; };
-		DC7B34C621AB99CF007E56C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC7B34EB21AB9A27007E56C7 /* Hari.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hari.swift; sourceTree = "<group>"; };
 		DC7B34F121AB9F25007E56C7 /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC7B34F321AB9F25007E56C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,8 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				DC7B350521ABAB60007E56C7 /* Repositories */,
-				DC7B34C521AB99CF007E56C7 /* Hari.h */,
-				DC7B34C621AB99CF007E56C7 /* Info.plist */,
 				DC7B34EB21AB9A27007E56C7 /* Hari.swift */,
 				DC19C14821AD2CCA006F7780 /* HariKey.swift */,
 				DC19C14421ACE0CD006F7780 /* HariError.swift */,
@@ -135,7 +130,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC7B34C721AB99CF007E56C7 /* Hari.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
