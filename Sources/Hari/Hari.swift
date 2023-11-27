@@ -21,6 +21,15 @@ public class Hari {
 		self.bundleID = bundleID
 	}
 
+	public func string(forKey: HariKey) -> String? {
+		guard let suiteName, let bundleID else {
+			return nil
+		}
+
+		let repository = StringRepository(suiteName: suiteName, bundleID: bundleID, key: forKey.stringValue)
+		return repository.get()
+	}
+
 	public func string(forKey: HariKey) throws -> String {
 		guard let suiteName else {
 			throw HariError.undefinedSuiteName
@@ -35,6 +44,15 @@ public class Hari {
 		}
 
 		return value
+	}
+
+	public func bool(forKey: HariKey) throws -> Bool? {
+		guard let suiteName, let bundleID else {
+			return nil
+		}
+
+		let repository = BoolRepository(suiteName: suiteName, bundleID: bundleID, key: forKey.stringValue)
+		return repository.get()
 	}
 
 	public func bool(forKey: HariKey) throws -> Bool {
@@ -52,5 +70,4 @@ public class Hari {
 
 		return value
 	}
-
 }
