@@ -10,6 +10,6 @@ import Foundation
 
 public enum HariError: Error {
 	case notFoundKey
-    case undefinedSuiteName
-    case undefinedBundleID
+	case undefinedSuiteName
+	case undefinedBundleID
 }
