@@ -70,4 +70,29 @@ public class Hari {
 
 		return value
 	}
+
+    public func int(forKey: HariKey) -> Int? {
+        guard let suiteName, let bundleID else {
+            return nil
+        }
+
+        let repository = IntRepository(suiteName: suiteName, bundleID: bundleID, key: forKey.stringValue)
+        return repository.get()
+    }
+
+    public func int(forKey: HariKey) throws -> Int {
+        guard let suiteName else {
+            throw HariError.undefinedSuiteName
+        }
+        guard let bundleID else {
+            throw HariError.undefinedBundleID
+        }
+
+        let repository = IntRepository(suiteName: suiteName, bundleID: bundleID, key: forKey.stringValue)
+        guard let value = repository.get() else {
+            throw HariError.notFoundKey
+        }
+
+        return value
+    }
 }
